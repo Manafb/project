@@ -14,11 +14,16 @@ class Major extends Model
 
     public function Students()
     {
-        return $this->hasMany(Students::class);
+        return $this->hasMany(Student::class);
     }
 
     public function Modules()
     {
-        return $this->hasMany(Modules::class);
+        return $this->hasMany(Module::class);
+    }
+
+    public function Head()
+    {
+        return $this->belongsTo(User::class,"head_id");
     }
 }

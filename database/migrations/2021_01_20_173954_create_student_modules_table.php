@@ -14,14 +14,13 @@ class CreateStudentModulesTable extends Migration
     public function up()
     {
         Schema::create('student_modules', function (Blueprint $table) {
-            $table->bigIncrements('id');
             $table->bigInteger('module_id')->unsigned();
             $table->bigInteger('student_id')->unsigned();
             $table->boolean('approve');
             $table->foreign('module_id')->references('id')->on('modules')->onDelete('cascade');
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
 
-
+            $table->primary(["module_id","student_id"]);
             $table->timestamps();
         });
     }

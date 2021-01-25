@@ -15,7 +15,12 @@ class Group extends Model
 
     public function Group_users()
     {
-        $this->hasMany(Group_users::class);
+        return $this->hasMany(Group_user::class);
+    }
+
+    public function Posts()
+    {
+        return $this->hasMany(Post::class);
     }
 
 }

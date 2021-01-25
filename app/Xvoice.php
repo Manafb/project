@@ -14,5 +14,8 @@ class Xvoice extends Model
         "received_id"
     ];
 
-
+    public function Receiver()
+    {
+        return $this->belongsTo(User::class,"received_id");
+    }
 }

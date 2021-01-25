@@ -23,6 +23,10 @@ class Student extends Model
     }
     public function Modules()
     {
-        return $this->hasMany(Module::class);
+        return $this->belongsToMany(Module::class,"student_modules");
+    }
+    public function Group_users()
+    {
+        return $this->belongsToMany(Group::class,"group_users");
     }
 }

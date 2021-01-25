@@ -14,7 +14,12 @@ class College extends Model
 
     public function Students()
     {
-        $this->hasMany(Student::class);
+        return $this->hasMany(Student::class);
+    }
+
+    public function HeadOfCollege()
+    {
+        return $this->belongsTo(User::class,"headOfCollege_id");
     }
 
 }

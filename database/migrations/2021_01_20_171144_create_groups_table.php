@@ -15,8 +15,7 @@ class CreateGroupsTable extends Migration
     {
         Schema::create('groups', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('groupable_id')->unsigned();
-            $table->string('groupable_type');
+            $table->morphs("groupable");
             $table->string('type');
             $table->timestamps();
         });
