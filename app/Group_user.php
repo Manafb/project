@@ -19,7 +19,8 @@ class Group_user extends Model
 
     public function Group()
     {
-        return $this->belongsTo(Group::class);
+        return $this->morphTo(Group::class, 'Groupable');
     }
+
 
 }

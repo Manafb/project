@@ -14,6 +14,11 @@ class Image extends Model
         "imegable_type"
     ];
 
+    public function Imagable()
+    {
+        return $this->morphTo();
+    }
+
     public function Post()
     {
         return $this->belongsTo(Post::class);

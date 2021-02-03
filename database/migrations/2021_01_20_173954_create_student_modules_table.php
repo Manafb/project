@@ -32,6 +32,6 @@ class CreateStudentModulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('student_courses');
+        Schema::dropIfExists('student_modules');
     }
 }

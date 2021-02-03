@@ -9,8 +9,12 @@ class Attachments extends Model
     protected $fillable = [
         "id",
         "url",
-        "attachmentable_id",
-        "attachmentable_type",
+        "attachable_id",
+        "attachable_type",
 
     ];
+    public function Attachable()
+    {
+        return $this->morphTo();
+    }
 }

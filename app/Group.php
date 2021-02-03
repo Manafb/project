@@ -13,6 +13,11 @@ class Group extends Model
         "type"
     ];
 
+    public function Groupable()
+    {
+        return $this->morphTo();
+    }
+
     public function Group_users()
     {
         return $this->hasMany(Group_user::class);

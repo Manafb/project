@@ -18,14 +18,14 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function Group()
-    {
-        return $this->belongsTo(Group::class);
-    }
-
     public function Comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function Group()
+    {
+        return $this->morphTo(Group::class, 'groupable');
     }
 
 }
