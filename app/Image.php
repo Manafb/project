@@ -19,10 +19,4 @@ class Image extends Model
         return $this->morphTo();
     }
 
-    public function Post()
-    {
-        return $this->belongsTo(Post::class);
-    }
-
-
 }

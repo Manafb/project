@@ -13,6 +13,7 @@ class Major extends Model
     ];
 
     public function Students()
+
     {
         return $this->hasMany(Student::class);
     }

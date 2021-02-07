@@ -6,106 +6,106 @@
                 <tr>
                     <th width="3%">#</th>
                     <th width="38%">Name</th>
-                    <th width="38%">Head Of College</th>
+                    <th width="38%">Head Of Department</th>
                     <th width="15%">Action</th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
+                        <a class="btn btn-warning" href="{{route("major.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr><tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>It</td>
-                    <td>Nout</td>
+                    <td>CS</td>
+                    <td>Manaf</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="{{route("major.index")}}">Majors</a>
+                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
 
@@ -120,8 +120,8 @@
 @section("breadcrumb")
     <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="fas fa-grip-horizontal"></i>Dashboard</a>
     </li>
-    <li class="breadcrumb-item"><a>College</a></li>
+    <li class="breadcrumb-item"><a>Majors</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">College</h1>
+    <h1 class="float-left">Majors</h1>
 @endsection

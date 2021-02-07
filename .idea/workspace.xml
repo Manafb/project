@@ -2,467 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d853a84b-26e3-4c3d-86ee-01dc4719aacb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/components.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/components.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/reverse.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/skins/reverse.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/skins/reverse.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-600.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-600.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-600.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-600.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-600.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-800.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-800.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-800.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-800.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-800.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nunito-v9-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Black-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Black-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Black-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Black-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Thin-FD-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Thin-FD-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Thin-FD-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Thin-FD-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Black-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Black-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Black-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Black-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Bold-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Bold-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Light-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Medium-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Medium-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Thin-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Thin-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Thin-FD.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Farsi-Digits/Vazir-Thin-FD.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Black.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Vazir.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Black-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Black-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Black-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Black-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Bold-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Bold-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Bold-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Bold-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Light-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Light-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Light-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Light-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Medium-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Medium-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Medium-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Medium-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Thin-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Thin-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Thin-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-Thin-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-WOL.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-WOL.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-WOL.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/Without-Latin/Vazir-WOL.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/font-face.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/vazir/sample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/avatar-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/avatar-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/avatar-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/avatar-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/avatar-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/drawkit/drawkit-full-stack-man-colour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/drawkit/drawkit-mobile-article-colour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/drawkit/drawkit-nature-man-colour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/drawkit/revenue-graph-colour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/example-image-50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/example-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/news/img17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/p-250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/p-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-1-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-2-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-3-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-4-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-5-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/products/product-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/stisla-fill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/stisla-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/stisla-transparent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/stisla.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/unsplash/andre-benz-1214056-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/unsplash/eberhard-grossgasteiger-1207565-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/unsplash/login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/auth-register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/bootstrap-modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/components-chat-box.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/components-multiple-upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/components-statistic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/components-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/components-user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/features-post-create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/features-posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/features-setting-detail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/forms-advanced-forms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-advanced-route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-draggable-marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-geocoding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-geolocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-multiple-marker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/gmaps-simple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/index-0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-chartjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-datatables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-ion-icons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-sparkline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-sweetalert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-toastr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/modules-vector-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/page/utilities-contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/stisla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/auth-forgot-password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/auth-login-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/auth-login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/auth-register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/auth-reset-password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/blank.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-alert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-badge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-breadcrumb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-card.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-collapse.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-list-group.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-media-object.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-modal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-nav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-popover.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-progress.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-tooltip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/bootstrap-typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-avatar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-chat-box.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-empty-state.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-hero.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-multiple-upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-pricing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-statistic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-tab.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/components-wizard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/credits.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/errors-403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/errors-404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/errors-500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/errors-503.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-activities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-post-create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-setting-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-settings.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/features-tickets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/forms-advanced-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/forms-editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/forms-validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-advanced-route.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-draggable-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-geocoding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-geolocation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-multiple-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-route.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/gmaps-simple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/index-0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/layout-default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/layout-top-navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/layout-transparent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-chartjs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-datatables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-flag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-font-awesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-ion-icons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-owl-carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-sparkline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-sweet-alert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-toastr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-vector-map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/modules-weather-icon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/utilities-contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/utilities-invoice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/utilities-subscribe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/ai/placeholder-avatar.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/ai/placeholder-product.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/ai/placeholder.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/auth-forgot-password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/auth-login-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/auth-login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/auth-register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/auth-reset-password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/blank.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-alert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-badge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-breadcrumb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-card.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-collapse.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-list-group.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-media-object.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-modal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-nav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-popover.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-progress.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-tooltip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/bootstrap-typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-avatar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-chat-box.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-empty-state.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-hero.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-multiple-upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-pricing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-statistic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-tab.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/components-wizard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/credits.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/errors-403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/errors-404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/errors-500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/errors-503.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-activities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-post-create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-setting-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-settings.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/features-tickets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/forms-advanced-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/forms-editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/forms-validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-advanced-route.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-draggable-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-geocoding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-geolocation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-multiple-marker.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-route.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/gmaps-simple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/index-0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layout-default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layout-top-navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layout-transparent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layouts/master-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layouts/master-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layouts/master.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/layouts/menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-chartjs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-datatables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-flag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-font-awesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-ion-icons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-owl-carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-sparkline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-sweet-alert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-toastr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-vector-map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/modules-weather-icon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/utilities-contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/utilities-invoice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/pages/utilities-subscribe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/_mixin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/_variable.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_activities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_article.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_author.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_avatar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_avataritem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_browser.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_chat.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_chocolat.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_customtab.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_datatables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_daterangepicker.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_dropzone.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_empty_state.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_flagicon.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_fullcalendar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_gallery.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_hero.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_imagepreview.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_invoice.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_ionicons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_jqvmap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_owlcarousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_pricing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_product.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_profile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_pwstrength.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_select2.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_selectric.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_slider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_sparkline.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_statistics.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_summary.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_summernote.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_sweetalert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_tagsinput.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_ticket.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_timepicker.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_toast.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_useritem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_weather.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_weathericon.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/components/_wizard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_accordion.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_button.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_progressbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_tab.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_table.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/override/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/rtl.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/skins/reverse.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/theme/_animation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/theme/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/theme/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/theme/_page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sources/scss/theme/_section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Major.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Major.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/College/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -479,17 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="390">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -497,74 +37,94 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="728">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/nav.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
-              <folding>
-                <element signature="n#nav#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/leftNav.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/College.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="145" column="6" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#94#100#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/js.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/css.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+            <state relative-caret-position="130">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="823">
+              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+              <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+              <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+              <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+              <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+              <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+              <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+              <caret line="87" column="77" selection-start-line="87" selection-start-column="77" selection-end-line="87" selection-end-column="77" />
+              <caret line="97" column="77" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
+              <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+              <folding>
+                <element signature="e#159#166#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/add.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/Major/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Major.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/Major/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -576,6 +136,8 @@
       <find>DASHBOARD</find>
       <find>seart</find>
       <find>navbar navbar-expand-lg main-navbar</find>
+      <find>select2</find>
+      <find>titi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -600,13 +162,10 @@
         <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/app/College.php" />
         <option value="$PROJECT_DIR$/app/Xvoice.php" />
-        <option value="$PROJECT_DIR$/app/Major.php" />
         <option value="$PROJECT_DIR$/app/Student.php" />
         <option value="$PROJECT_DIR$/app/Module.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Image.php" />
         <option value="$PROJECT_DIR$/app/Group.php" />
-        <option value="$PROJECT_DIR$/app/Attachments.php" />
         <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/app/Group_user.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -615,14 +174,23 @@
         <option value="$PROJECT_DIR$/database/migrations/2021_01_20_173953_create_modules_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2021_01_20_174842_create_group_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/css.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/js.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/leftNav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/test.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ControlPanel/College/add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/js.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/css.blade.php" />
+        <option value="$PROJECT_DIR$/app/Attachments.php" />
+        <option value="$PROJECT_DIR$/app/Image.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Major.php" />
+        <option value="$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ControlPanel/Major/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ControlPanel/Major/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
       </list>
     </option>
   </component>
@@ -734,10 +302,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-187" />
-    <option name="y" value="36" />
-    <option name="width" value="1382" />
-    <option name="height" value="662" />
+    <option name="x" value="2036" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -771,45 +339,44 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="ControlPanel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="ControlPanel" type="462c0819:PsiDirectoryNode" />
-              <item name="College" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="passwords" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -821,13 +388,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/ControlPanel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\project\resources\views\ControlPanel" />
       <recent name="C:\laragon\www\project" />
     </key>
   </component>
@@ -861,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35193000" />
+    <option name="totallyTimeSpent" value="38941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -870,10 +438,10 @@
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" weight="0.24962178" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.6868906" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
@@ -917,37 +485,22 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/College.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Major.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/www/Tutorial.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2021_01_20_174934_create_images_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -962,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2021_01_20_175002_create_attachments_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -979,7 +525,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -991,31 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Group.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Attachments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1046,14 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_01_20_171228_create_colleges_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="35" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="35" />
           <folding />
         </state>
       </provider>
@@ -1191,81 +708,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/css.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/js.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#94#100#0#HTML" expanded="true" />
-          </folding>
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/leftNav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="3770">
           <caret line="145" column="6" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="5642">
           <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
-          <folding>
-            <element signature="n#nav#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="364">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_01_20_171228_create_colleges_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/js.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/css.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Attachments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/College.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Major.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/Major/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/Major/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+          <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+          <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+          <caret line="87" column="77" selection-start-line="87" selection-start-column="77" selection-end-line="87" selection-end-column="77" />
+          <caret line="97" column="77" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
+          <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+          <folding>
+            <element signature="e#159#166#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

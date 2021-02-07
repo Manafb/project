@@ -18,7 +18,27 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/test', function (){
+Route::prefix("ControlPanel")->group(function (){
+    Route::prefix("College")->group(function (){
+        Route::get('/', function (){
+            return view("ControlPanel.College.index");
+        })->name('college.index');
+        Route::get('/create', function (){
+            return view("ControlPanel.College.create");
+        })->name('college.create');
+    });
+
+    Route::prefix("Major")->group(function (){
+        Route::get('/', function (){
+            return view("ControlPanel.Major.index");
+        })->name('major.index');
+        Route::get('/create', function (){
+            return view("ControlPanel.Major.create");
+        })->name('major.create');
+    });
+});
+
+Route::get('/', function (){
     return view("test");
 })->name('test');
 

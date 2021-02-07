@@ -1,4 +1,5 @@
 <!-- General CSS Files -->
+<script src="{{asset("ControlPanel/assets/modules/jquery.min.js")}}"></script>
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/bootstrap/css/bootstrap.min.css")}}">
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/fontawesome/css/all.min.css")}}">
 

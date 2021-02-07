@@ -27,9 +27,25 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <section class="section mt-5">
-                @yield("content")
-            </section>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb text-breadcrumb-color">
+                   @yield("breadcrumb")
+                </ol>
+            </nav>
+                <section class="section">
+                    <div class="section-header">
+                        <div class="width-100-100">
+                           @yield("header")
+                        </div>
+                    </div>
+
+                    <div class="card ">
+                        <div class="card-body">
+                            @yield("content")
+                        </div>
+                    </div>
+                </section>
+        </div>
         </div>
         @include("layouts.footer")
     </div>

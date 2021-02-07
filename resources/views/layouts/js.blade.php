@@ -1,5 +1,4 @@
 <!-- General JS Scripts -->
-<script src="{{asset("ControlPanel/assets/modules/jquery.min.js")}}"></script>
 <script src="{{asset("ControlPanel/assets/modules/popper.js")}}"></script>
 <script src="{{asset("ControlPanel/assets/modules/tooltip.js")}}"></script>
 <script src="{{asset("ControlPanel/assets/modules/bootstrap/js/bootstrap.min.js")}}"></script>
