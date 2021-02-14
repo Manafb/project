@@ -36,6 +36,23 @@ Route::prefix("ControlPanel")->group(function (){
             return view("ControlPanel.Major.create");
         })->name('major.create');
     });
+    Route::prefix("Module")->group(function (){
+        Route::get('/', function (){
+            return view("ControlPanel.Module.index");
+        })->name('module.index');
+        Route::get('/create', function (){
+            return view("ControlPanel.Module.create");
+        })->name('module.create');
+    });
+    Route::prefix("User")->group(function (){
+        Route::get('/', function (){
+            return view("ControlPanel.User.index");
+        })->name('user.index');
+        Route::get('/create', function (){
+            return view("ControlPanel.User.create");
+        })->name('user.create');
+    });
+
 });
 
 Route::get('/', function (){

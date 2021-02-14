@@ -12,7 +12,7 @@
                 <tr>
                     <td>1</td>
                     <td>It</td>
-                    <td>Nout</td>
+                    <td>Nour</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>

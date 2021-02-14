@@ -3,10 +3,12 @@
     <div class="row">
         <div class="col-md-6">
             <form action="#">
+
                 <div class="form-group">
                     <label for="name">Name: </label>
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
+
                 <div class="form-group">
                     <label for="head_id">Head Of Department: </label>
                     <select class="form-control select2" id="head_id" name="head_id">
@@ -14,7 +16,9 @@
                         <option value="2">Manaf</option>
                     </select>
                 </div>
+
                 <input type="submit" class="btn btn-primary" value="Save">
+
             </form>
         </div>
         <script>
