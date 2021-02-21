@@ -16,7 +16,6 @@
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
                 <tr>
@@ -26,115 +25,60 @@
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td>Programming</td>
                     <td>CS1</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
                     </td>
                 </tr>
 
@@ -152,4 +96,7 @@
 @endsection
 @section("header")
     <h1 class="float-left">Module</h1>
+@endsection
+@section("title")
+    Modules List
 @endsection

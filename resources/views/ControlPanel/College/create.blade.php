@@ -2,7 +2,12 @@
 @section("content")
     <div class="row">
         <div class="col-md-6">
+
             <form action="#">
+                <div class="pull-right">
+                    <a href={{route('college.index')}}></a>
+
+                </div>
 
                 <div class="form-group">
                     <label for="name">Name: </label>
@@ -11,7 +16,6 @@
 
                 <div class="form-group">
                     <label for="headOfCollege_id">Head Of College: </label>
-                    //example to see how it works before doing the backend.
                     <select class="form-control select2" id="headOfCollege_id" name="headOfCollege_id">
                         <option value="1">Nour</option>
                         <option value="2">Manaf</option>

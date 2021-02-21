@@ -17,8 +17,12 @@ class CreateMajorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->bigInteger('head_id')->unsigned();
+            $table->bigInteger('college_id')->unsigned();
+
 
             $table->foreign('head_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('college_id')->references('id')->on('colleges')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

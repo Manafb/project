@@ -17,16 +17,24 @@ class Student extends Model
     {
         return $this->belongsTo(College::class);
     }
+
     public function Major()
     {
         return $this->belongsTo(Major::class);
     }
+
     public function Modules()
     {
-        return $this->belongsToMany(Module::class,"student_modules");
+        return $this->belongsToMany(Module::class, "student_modules");
     }
+
     public function Group_users()
     {
-        return $this->belongsToMany(Group::class,"group_users");
+        return $this->belongsToMany(Group::class, "group_users");
+    }
+
+    public function User()
+    {
+        return $this->belongsTo(User::class);
     }
 }
