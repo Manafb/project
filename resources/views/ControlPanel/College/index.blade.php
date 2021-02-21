@@ -2,6 +2,9 @@
 @section("content")
     <div class="row">
         <div class="col-md-12">
+            <div class="pull-right">
+                <a href="{{route('college.create')}}" class="btn btn-lg btn-success">Register a new admin</a>
+            </div>
             <table class="table table-bordered table-md">
                 <tr>
                     <th width="3%">#</th>
@@ -111,6 +114,7 @@
 
 
             </table>
+
         </div>
         <script>
             $(".select2").select2();
@@ -124,4 +128,7 @@
 @endsection
 @section("header")
     <h1 class="float-left">College</h1>
+@endsection
+@section("title")
+    Colleges List
 @endsection

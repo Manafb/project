@@ -8,11 +8,11 @@
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="module_id">Modules:</label>
-                    <select class="form-control select2" id="module_id" name="module_id">
-                        <option value="1">Programming</option>
-                        <option value="2">Software testing</option>
-                        <option value="2">Cryptography</option>
+                    <label for="major_id">Majors:</label>
+                    <select class="form-control select2" id="major_id" name="major_id">
+                        <option value="1">Computer Science</option>
+                        <option value="2">Law</option>
+                        <option value="2">Finance</option>
 
                     </select>
                 </div>

@@ -125,3 +125,6 @@
 @section("header")
     <h1 class="float-left">Majors</h1>
 @endsection
+@section("title")
+    Majors List
+@endsection

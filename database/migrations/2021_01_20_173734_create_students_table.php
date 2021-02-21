@@ -18,9 +18,11 @@ class CreateStudentsTable extends Migration
             $table->bigInteger('uid');
             $table->bigInteger('college_id')->unsigned();
             $table->bigInteger('major_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
 
             $table->foreign('college_id')->references('id')->on('colleges')->onDelete('cascade');
             $table->foreign('major_id')->references('id')->on('majors')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
 
             $table->timestamps();

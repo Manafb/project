@@ -22,4 +22,9 @@ class College extends Model
         return $this->belongsTo(User::class,"headOfCollege_id");
     }
 
+    public function Majors()
+    {
+        return $this->hasMany(Major::class);
+    }
+
 }
