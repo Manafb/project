@@ -17,13 +17,28 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('ControlPanel/College/create');
-Route::get('ControlPanel/College');
 
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/', function (){
+    return view("test");
+})->name('test');
+
+
 Route::prefix("ControlPanel")->group(function (){
+
     Route::prefix("College")->group(function (){
         Route::get('/', function (){
             return view("ControlPanel.College.index");
@@ -31,6 +46,9 @@ Route::prefix("ControlPanel")->group(function (){
         Route::get('/create', function (){
             return view("ControlPanel.College.create");
         })->name('college.create');
+        Route::get('/','College\CollegeController@index')->name('college./');
+        Route::get('/create','College\CollegeController@create')->name('college.create');
+        Route::post('/store','College\CollegeController@store')->name('college.store');
     });
 
     Route::prefix("Major")->group(function (){
@@ -75,8 +93,3 @@ Route::prefix("ControlPanel")->group(function (){
     });
 
 });
-
-Route::get('/', function (){
-    return view("test");
-})->name('test');
-
