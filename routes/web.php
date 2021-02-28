@@ -40,15 +40,13 @@ Route::get('/', function (){
 Route::prefix("ControlPanel")->group(function (){
 
     Route::prefix("College")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.College.index");
-        })->name('college.index');
-        Route::get('/create', function (){
-            return view("ControlPanel.College.create");
-        })->name('college.create');
-        Route::get('/','College\CollegeController@index')->name('college./');
+        Route::get('/','College\CollegeController@index')->name('college.index');
         Route::get('/create','College\CollegeController@create')->name('college.create');
         Route::post('/store','College\CollegeController@store')->name('college.store');
+
+        Route::get('/edit/{id}','College\CollegeController@edit')->name('college.edit');
+        Route::post('/edit/{id}','College\CollegeController@update')->name('college.update');
+        Route::post('/destroy','College\CollegeController@destroy')->name('college.destroy');
     });
 
     Route::prefix("Major")->group(function (){

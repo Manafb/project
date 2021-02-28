@@ -17,17 +17,27 @@
                     <tr>
                         <td>{{$college->id}}</td>
                         <td>{{$college->name}}</td>
-                        <td>{{$college->headOfCollege_id}}</td>
+                        <td>{{$college->HeadOfCollege->name}}</td>
                         <td>
-                            <a class="btn btn-warning" href="{{route("major.create")}}">Edit</a>
-                            <a class="btn btn-danger" href="#">Delete</a>
+                            <a class="btn btn-warning" href="{{route("college.edit",["id"=>$college->id])}}">Edit</a>
+                                <button class="btn btn-danger deleteBtn" data-confirm="Realy?|Do you want to continue?" data-confirm-yes="deleteFun({{$college->id}})">Delete</button>
                         </td>
 
                     </tr>
                     @endforeach
 
-
                 </table>
+            <form action="{{route("college.destroy")}}" method="POST" id="deleteForm">
+                @csrf
+                <input type="hidden" id="id" name="id" >
+            </form>
+            <script>
+                function deleteFun(ele)
+                {
+                    $("#id").val(ele);
+                    $("#deleteForm").submit();
+                }
+            </script>
         </div>
     </div>
 

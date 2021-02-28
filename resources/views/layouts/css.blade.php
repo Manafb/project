@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/summernote/summernote-bs4.css")}}">
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css")}}">
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css")}}">
-
+<link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/izitoast/css/iziToast.min.css")}}">
 <!-- Template CSS -->
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/css/style.css")}}">
 <link rel="stylesheet" href="{{asset("ControlPanel/assets/css/components.css")}}">
