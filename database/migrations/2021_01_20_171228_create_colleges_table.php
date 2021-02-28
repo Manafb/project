@@ -16,6 +16,7 @@ class CreateCollegesTable extends Migration
         Schema::create('colleges', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('headOfCollege');
             $table->bigInteger('headOfCollege_id')->unsigned();
 
             $table->foreign('headOfCollege_id')->references('id')->on('users')->onDelete('cascade');

@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function College() {
+        return $this->hasOne(College::class, 'headOfCollege_id');
+    }
 }

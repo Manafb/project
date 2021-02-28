@@ -2,7 +2,8 @@
 @section("content")
     <div class="row">
         <div class="col-md-6">
-            <form action="#">
+            <form action="{{route("major.store")}}" method="post">
+                @csrf
 
                 <div class="form-group">
                     <label for="name">Name: </label>
