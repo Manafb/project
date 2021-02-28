@@ -11,22 +11,45 @@ use Illuminate\Http\Request;
 
 class CollegeController extends Controller
 {
+    public $viewNameSpace="ControlPanel.College.";
     public function index()
     {
         $colleges = College::all();
-        return view("ControlPanel.College.index", ['colleges'=>$colleges]);
+        return view($this->viewNameSpace."index", ['colleges'=>$colleges]);
     }
 
     public function create() {
-        $users = User::all();
-        return view("ControlPanel.College.create", ['users' => $users]);
+        $users = User::allAdmin();
+        return view($this->viewNameSpace."create", ['users' => $users]);
     }
 
     public function store(Request $request)
     {
         College::create($request->all());
         return redirect()->back();
+    }
 
+    public function edit($id)
+    {
+        $model=College::findOrFail($id);
+        $users=User::allAdmin();
+        return view($this->viewNameSpace."edit")
+            ->with("model",$model)
+            ->with("users",$users);
+    }
+
+    public function update($id,Request  $request)
+    {
+        $model=College::findOrFail($id);
+        $model->update($request->all());
+        return redirect()->back()->with("msg","Done!");
+    }
+
+    public function destroy(Request $request)
+    {
+        $model=College::findOrFail($request->input("id"));
+        $model->delete();
+        return redirect()->back()->with("msg","Done!");
     }
 }
 

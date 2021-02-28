@@ -40,4 +40,18 @@ class User extends Authenticatable
     public function College() {
         return $this->hasOne(College::class, 'headOfCollege_id');
     }
+
+    public function Student()
+    {
+        return $this->hasOne(Student::class);
+    }
+
+    public static function allStudents()
+    {
+       return User::select("*")->has("Student")->get();
+    }
+    public static function allAdmin()
+    {
+      return User::select("*")->doesntHave("Student")->get();
+    }
 }

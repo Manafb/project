@@ -53,5 +53,22 @@
 
 @include("layouts.js")
 @yield("js")
+<script>
+    @if(Session::has('msg'))
+        iziToast.success({
+            title: 'Success',
+            message: "{{Session::get('msg')}}",
+            position: 'topRight'
+        });
+    @endif
+    @if($errors->has("error"))
+        iziToast.error({
+            title: 'Error',
+            message: "{{Session::get('error')}}",
+            position: 'topRight'
+        });
+    @endif
+
+</script>
 </body>
 </html>

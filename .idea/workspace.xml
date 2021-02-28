@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d853a84b-26e3-4c3d-86ee-01dc4719aacb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/College.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/College.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControlPanel/College/CollegeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/College/CollegeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/College/CollegeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/College/CollegeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_20_171228_create_colleges_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_20_171228_create_colleges_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ControlPanel/assets/js/page/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ControlPanel/assets/js/page/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/College/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/Major/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/Major/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/User/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/User/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -329,13 +325,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple_blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xampp/htdocs/p-dev1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\project\resources\views\ControlPanel\College" />
       <recent name="C:\laragon\www\project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

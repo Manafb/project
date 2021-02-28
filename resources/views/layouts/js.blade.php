@@ -19,3 +19,4 @@
 <!-- Template JS File -->
 <script src="{{asset("ControlPanel/assets/js/scripts.js")}}"></script>
 <script src="{{asset("ControlPanel/assets/js/custom.js")}}"></script>
+<script src="{{asset("ControlPanel/assets/modules/izitoast/js/iziToast.min.js")}}"></script>
