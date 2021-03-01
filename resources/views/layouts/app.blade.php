@@ -34,9 +34,7 @@
             </nav>
                 <section class="section">
                     <div class="section-header">
-                        <div class="width-100-100">
                            @yield("header")
-                        </div>
                     </div>
 
                     <div class="card ">
@@ -61,7 +59,7 @@
             position: 'topRight'
         });
     @endif
-    @if($errors->has("error"))
+    @if(Session::has("error"))
         iziToast.error({
             title: 'Error',
             message: "{{Session::get('error')}}",

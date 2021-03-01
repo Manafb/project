@@ -47,7 +47,10 @@
     <li class="breadcrumb-item"><a>College</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">College</h1>
+    <div style="display: flex;justify-content: space-between;width: 100%;">
+        <h1 class="float-left">College</h1>
+        <a class="btn btn-primary" href="{{route("college.create")}}">Create</a>
+    </div>
 @endsection
 @section("title")
     Colleges List

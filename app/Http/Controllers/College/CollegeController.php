@@ -26,7 +26,7 @@ class CollegeController extends Controller
     public function store(Request $request)
     {
         College::create($request->all());
-        return redirect()->back();
+        return redirect(route("college.index"))->with("msg","college created successfully");
     }
 
     public function edit($id)
@@ -42,7 +42,7 @@ class CollegeController extends Controller
     {
         $model=College::findOrFail($id);
         $model->update($request->all());
-        return redirect()->back()->with("msg","Done!");
+        return redirect(route("college.index"))->with("msg","Your College updated Successfully");
     }
 
     public function destroy(Request $request)
