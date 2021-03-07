@@ -9,112 +9,31 @@
                     <th width="38%">Head Of Department</th>
                     <th width="15%">Action</th>
                 </tr>
+                @foreach($majors as $major)
                 <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
+                    <td>{{$major->id}}</td>
+                    <td>{{$major->name}}</td>
+                    <td>{{$major->Head->name}}</td>
                     <td>
-                        <a class="btn btn-warning" href="{{route("major.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
+                        <a class="btn btn-warning" href="{{route("major.edit",["id"=>$major->id])}}">Edit</a>
+                        <button class="btn btn-danger deleteBtn" data-confirm="Realy?|Do you want to continue?" data-confirm-yes="deleteFun({{$major->id}})">Delete</button>
+                        <a class="btn btn-primary" href="{{route("module.index")}}">Module</a>
                     </td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr><tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CS</td>
-                    <td>Manaf</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("college.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                        <a class="btn btn-primary" href="#">Module</a>
-                    </td>
-                </tr>
-
-
+                @endforeach
             </table>
+            <form action="{{route("major.destroy")}}" method="POST" id="deleteForm">
+                @csrf
+                <input type="hidden" id="id" name="id" >
+            </form>
+            <script>
+                function deleteFun(ele)
+                {
+                    $("#id").val(ele);
+                    $("#deleteForm").submit();
+                }
+            </script>
         </div>
-        <script>
-            $(".select2").select2();
-        </script>
     </div>
 @endsection
 @section("breadcrumb")

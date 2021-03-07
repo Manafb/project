@@ -6,83 +6,32 @@
                 <tr>
                     <th width="3%">#</th>
                     <th width="38%">Name</th>
-                    <th width="38%">Module ID</th>
+                    <th width="38%">Major ID</th>
                     <th width="15%">Action</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming</td>
-                    <td>CS1</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("module.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-
+                @foreach($modules as $module)
+                    <tr>
+                        <td>{{$module->id}}</td>
+                        <td>{{$module->name}}</td>
+                        <td>{{$module->major_id}}</td>
+                        <td>
+                        <a class="btn btn-warning" href="{{route("module.edit",["id"=>$module->id])}}">Edit</a>
+                            <button class="btn btn-danger deleteBtn" data-confirm="Realy?|Do you want to continue?" data-confirm-yes="deleteFun({{$module->id}})">Delete</button>
+                        </td>
+                    </tr>
+                @endforeach
             </table>
+            <form action="{{route("module.destroy")}}" method="POST" id="deleteForm">
+                @csrf
+                <input type="hidden" id="id" name="id" >
+            </form>
+            <script>
+                function deleteFun(ele)
+                {
+                    $("#id").val(ele);
+                    $("#deleteForm").submit();
+                }
+            </script>
         </div>
         <script>
             $(".select2").select2();

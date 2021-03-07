@@ -12,117 +12,20 @@
                     <th width="15%">Major</th>
                     <th width="15%">Action</th>
                 </tr>
-
+                @foreach($students as $student)
                 <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
+                    <td>{{$student->id}}</td>
+                    <td>{{$student->name}}</td>
+                    <td>{{$student->email}}</td>
+                    <td>{{$student->uid}}</td>
+                    <td>{{$student->college}}</td>
+                    <td>{{$student->major}}</td>
                     <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
+                        <a class="btn btn-warning" href="{{route("student.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
                     </td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Hashim</td>
-                    <td>h@h.com</td>
-                    <td>758969</td>
-                    <td>College Of Science</td>
-                    <td>Computer Science</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-
-
+                @endforeach
 
             </table>
         </div>

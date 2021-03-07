@@ -32,6 +32,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
+
 Route::get('/', function (){
     return view("test");
 })->name('test');
@@ -50,36 +51,42 @@ Route::prefix("ControlPanel")->group(function (){
     });
 
     Route::prefix("Major")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.Major.index");
-        })->name('major.index');
-        Route::get('/create', function (){
-            return view("ControlPanel.Major.create");
-        })->name('major.create');
+        Route::get('/','Major\MajorController@index')->name('major.index');
+        Route::get('/create','Major\MajorController@create')->name('major.create');
+        Route::post('/store','Major\MajorController@store')->name('major.store');
+
+        Route::get('/edit/{id}','Major\MajorController@edit')->name('major.edit');
+        Route::post('/edit/{id}','Major\MajorController@update')->name('major.update');
+        Route::post('/destroy','Major\MajorController@destroy')->name('major.destroy');
+
+
+
     });
     Route::prefix("Module")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.Module.index");
-        })->name('module.index');
-        Route::get('/create', function (){
-            return view("ControlPanel.Module.create");
-        })->name('module.create');
+        Route::get('/','Module\ModuleController@index')->name('module.index');
+        Route::get('/create','Module\ModuleController@create')->name('module.create');
+        Route::post('/store','Module\ModuleController@store')->name('module.store');
+
+        Route::get('/edit/{id}','Module\ModuleController@edit')->name('module.edit');
+        Route::post('/edit/{id}','Module\ModuleController@update')->name('module.update');
+        Route::post('/destroy','Module\ModuleController@destroy')->name('module.destroy');
+
+
     });
     Route::prefix("User")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.User.index");
-        })->name('user.index');
-        Route::get('/create', function (){
-            return view("ControlPanel.User.create");
-        })->name('user.create');
+        Route::get('/','User\UserController@index')->name('user.index');
+        Route::get('/create','User\UserController@create')->name('user.create');
+        Route::post('/store','User\UserController@store')->name('user.store');
+
+        Route::get('/edit/{id}','User\UserController@edit')->name('user.edit');
+        Route::post('/edit/{id}','User\UserController@update')->name('user.update');
+        Route::post('/destroy','User\UserController@destroy')->name('user.destroy');
+
     });
     Route::prefix("Student")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.Student.index");
-        })->name('student.index');
-        Route::get('/create', function (){
-            return view("ControlPanel.Student.create");
-        })->name('student.create');
+        Route::get('/','Student\StudentController@index')->name('student.index');
+        Route::get('/create','Student\StudentController@create')->name('student.create');
+        Route::post('/store','Student\StudentController@store')->name('student.store');
     });
     Route::prefix("Xvoice")->group(function (){
         Route::get('/', function (){

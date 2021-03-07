@@ -10,11 +10,14 @@
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
 
+
                 <div class="form-group">
                     <label for="head_id">Head Of Department: </label>
-                    <select class="form-control select2" id="head_id" name="head_id">
-                        <option value="1">Nour</option>
-                        <option value="2">Manaf</option>
+                    <select class="form-control select2" name="head_id">
+                        <option value="">Select Head Of Department</option>
+                        @foreach($users as $user)
+                            <option value="{{$user->id}}">{{$user->name}}</option>
+                        @endforeach
                     </select>
                 </div>
 
@@ -35,3 +38,4 @@
 @section("header")
     <h1 class="float-left">Create Major</h1>
 @endsection
+

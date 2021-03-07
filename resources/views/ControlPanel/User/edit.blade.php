@@ -3,21 +3,21 @@
 
     <div class="row">
         <div class="col-md-6">
-            <form action="{{route("user.store")}}" method="post">
+            <form action="{{route("user.update",["id"=>$model->id]) }}" method="post">
                 @csrf
                 <div class="form-group">
                     <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="name" name="name" class="form-control" value="{{$model->name}}" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" class="form-control">
+                    <input type="text" id="email" name="email" class="form-control"  value="{{$model->email}}" required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" class="form-control">
+                    <input type="text" id="password" name="password" class="form-control"  value="{{$model->password}}" required>
                 </div>
                 <input type="submit" class="btn btn-primary" value="Save">
             </form>

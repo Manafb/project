@@ -1,55 +1,50 @@
 <?php
 
-namespace App\Http\Controllers\College;
+namespace App\Http\Controllers\Major;
 
-use App\College;
+use App\Major;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-
-
-class CollegeController extends Controller
+class MajorController extends Controller
 {
-    public $viewNameSpace="ControlPanel.College.";
+    public $viewNameSpace="ControlPanel.Major.";
+
     public function index()
     {
-        $colleges = College::all();
-        return view($this->viewNameSpace."index", ['colleges'=>$colleges]);
+        $majors=Major::all();
+        return view($this->viewNameSpace."index", ['majors'=>$majors]);
     }
-
     public function create() {
         $users = User::allAdmin();
-        return view($this->viewNameSpace."create", ['users' => $users]);
+        return view($this->viewNameSpace."create", ['users'=>$users]);
     }
 
     public function store(Request $request)
     {
-        College::create($request->all());
-        return redirect(route("college.index"));
+        Major::create($request->all());
+        return redirect(route("major.index"));
     }
-
     public function edit($id)
     {
-        $model=College::findOrFail($id);
+        $model=Major::findOrFail($id);
         $users=User::allAdmin();
         return view($this->viewNameSpace."edit")
             ->with("model",$model)
             ->with("users",$users);
     }
-
     public function update($id,Request  $request)
     {
-        $model=College::findOrFail($id);
+        $model=Major::findOrFail($id);
         $model->update($request->all());
-        return redirect(route("college.index"))->with("msg","Done!");
+        return redirect(route("major.index"))->with("msg","Done!");
     }
 
     public function destroy(Request $request)
     {
-        $model=College::findOrFail($request->input("id"));
+        $model=Major::findOrFail($request->input("id"));
         $model->delete();
         return redirect()->back()->with("msg","Done!");
     }
 }
-

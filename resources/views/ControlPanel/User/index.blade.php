@@ -9,110 +9,32 @@
                     <th width="38%">Email</th>
                     <th width="15%">Action</th>
                 </tr>
-
+                @foreach($users as $user)
                 <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
+                    <td>{{$user->id}}</td>
+                    <td>{{$user->name}}</td>
+                    <td>{{$user->email}}</td>
                     <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
+                        <a class="btn btn-warning" href="{{route("user.edit",["id"=>$user->id])}}">Edit</a>
+                        <button class="btn btn-danger deleteBtn" data-confirm="Realy?|Do you want to continue?" data-confirm-yes="deleteFun({{$user->id}})">Delete</button>
                     </td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Noor</td>
-                    <td>a@a.com</td>
-                    <td>
-                        <a class="btn btn-warning" href="{{route("user.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
-                    </td>
-                </tr>
+                @endforeach
 
 
 
             </table>
+            <form action="{{route("user.destroy")}}" method="POST" id="deleteForm">
+                @csrf
+                <input type="hidden" id="id" name="id" >
+            </form>
+            <script>
+                function deleteFun(ele)
+                {
+                    $("#id").val(ele);
+                    $("#deleteForm").submit();
+                }
+            </script>
         </div>
         <script>
             $(".select2").select2();

@@ -20,8 +20,9 @@ class CreateMajorsTable extends Migration
             $table->bigInteger('college_id')->unsigned();
 
 
-            $table->foreign('head_id')->references('id')->on('users')->onDelete('cascade');
+
             $table->foreign('college_id')->references('id')->on('colleges')->onDelete('cascade');
+            $table->foreign('head_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();
         });

@@ -1,37 +1,34 @@
 <?php
 
-namespace App\Http\Controllers\College;
-
-use App\College;
+namespace App\Http\Controllers\User;
 use App\User;
 use App\Http\Controllers\Controller;
+
+
 use Illuminate\Http\Request;
 
-
-
-class CollegeController extends Controller
+class UserController extends Controller
 {
-    public $viewNameSpace="ControlPanel.College.";
+    public $viewNameSpace="ControlPanel.User.";
+
     public function index()
     {
-        $colleges = College::all();
-        return view($this->viewNameSpace."index", ['colleges'=>$colleges]);
+        $users=User::all();
+        return view($this->viewNameSpace."index", ['users'=>$users]);
     }
-
     public function create() {
-        $users = User::allAdmin();
-        return view($this->viewNameSpace."create", ['users' => $users]);
+        $users = User::all();
+        return view($this->viewNameSpace."create", ['users'=>$users]);
     }
 
     public function store(Request $request)
     {
-        College::create($request->all());
-        return redirect(route("college.index"));
+        User::create($request->all());
+        return redirect(route("user.index"));
     }
-
     public function edit($id)
     {
-        $model=College::findOrFail($id);
+        $model=User::findOrFail($id);
         $users=User::allAdmin();
         return view($this->viewNameSpace."edit")
             ->with("model",$model)
@@ -40,16 +37,15 @@ class CollegeController extends Controller
 
     public function update($id,Request  $request)
     {
-        $model=College::findOrFail($id);
+        $model=User::findOrFail($id);
         $model->update($request->all());
         return redirect(route("college.index"))->with("msg","Done!");
     }
 
     public function destroy(Request $request)
     {
-        $model=College::findOrFail($request->input("id"));
+        $model=User::findOrFail($request->input("id"));
         $model->delete();
         return redirect()->back()->with("msg","Done!");
     }
 }
-
