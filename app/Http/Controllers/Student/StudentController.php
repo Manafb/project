@@ -18,12 +18,14 @@ class StudentController extends Controller
     }
     public function create() {
         $students = Student::all();
-        return view("ControlPanel.Student.create", ['students'=>$students]);
+        $college=College::all();
+        return view("ControlPanel.Student.create", ['students'=>$students,'colleges'=>$college]);
     }
 
     public function store(Request $request)
     {
-        Student::create($request->all());
-        return redirect(route("student.index"));
+        $user=User::create($request->all());
+        $user->Student()->create($request->all());
+        return redirect(route("student.index"))->with("msg","Done!");
     }
 }

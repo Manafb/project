@@ -1,4 +1,5 @@
 @extends("layouts.app")
+@section("user","active")
 @section("content")
     <div class="row">
         <div class="col-md-12">

@@ -40,6 +40,9 @@ Route::get('/', function (){
 
 Route::prefix("ControlPanel")->group(function (){
 
+    Route::prefix("Ajax")->group(function (){
+        Route::post('/ajax_getMajorByCollege','Ajax\AjaxController@getMajorByCollege')->name('ajax.getMajorByCollege');
+    });
     Route::prefix("College")->group(function (){
         Route::get('/','College\CollegeController@index')->name('college.index');
         Route::get('/create','College\CollegeController@create')->name('college.create');

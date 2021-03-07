@@ -1,4 +1,5 @@
 @extends("layouts.app")
+@section("student","active")
 @section("content")
     <div class="row">
         <div class="col-md-12">
@@ -15,11 +16,11 @@
                 @foreach($students as $student)
                 <tr>
                     <td>{{$student->id}}</td>
-                    <td>{{$student->name}}</td>
-                    <td>{{$student->email}}</td>
+                    <td>{{$student->user->name}}</td>
+                    <td>{{$student->user->email}}</td>
                     <td>{{$student->uid}}</td>
-                    <td>{{$student->college}}</td>
-                    <td>{{$student->major}}</td>
+                    <td>{{$student->college->name}}</td>
+                    <td>{{$student->major->name}}</td>
                     <td>
                         <a class="btn btn-warning" href="{{route("student.create")}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
