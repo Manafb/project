@@ -7,14 +7,12 @@
     <option name="TRACKING_ENABLED" value="true" />
 =======
     <list default="true" id="d853a84b-26e3-4c3d-86ee-01dc4719aacb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/College/CollegeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/College/CollegeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ControlPanel/College/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/css.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
 >>>>>>> cb2ece0ebf305a3f52926cbb8326a84b8ff90aca
     <option name="SHOW_DIALOG" value="false" />
@@ -406,10 +404,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xampp/htdocs/p-dev1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -450,7 +449,13 @@
       <workItem from="1614003475451" duration="15305000" />
       <workItem from="1614021755579" duration="16204000" />
       <workItem from="1614188736957" duration="2945000" />
+<<<<<<< HEAD
       <workItem from="1614262125396" duration="40714000" />
+=======
+      <workItem from="1614262125396" duration="40066000" />
+      <workItem from="1614595444241" duration="28000" />
+      <workItem from="1614611400236" duration="1582000" />
+>>>>>>> 746f2d568f1050624d63b884e7ab9da69c32e992
     </task>
     <servers />
   </component>
