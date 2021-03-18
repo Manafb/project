@@ -42,11 +42,13 @@
 @section("breadcrumb")
     <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="fas fa-grip-horizontal"></i>Dashboard</a>
     </li>
-    <li class="breadcrumb-item"><a>Module</a></li>
+    <li class="breadcrumb-item"><a>Modules</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">Module</h1>
-@endsection
+    <div style="display: flex;justify-content: space-between;width: 100%;">
+        <h1 class="float-left">Modules</h1>
+        <a class="btn btn-primary" href="{{route("module.create")}}">Create</a>
+    </div>@endsection
 @section("title")
     Modules List
 @endsection

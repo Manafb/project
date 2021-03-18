@@ -22,13 +22,26 @@
                     <td>{{$student->college->name}}</td>
                     <td>{{$student->major->name}}</td>
                     <td>
-                        <a class="btn btn-warning" href="{{route("student.create")}}">Edit</a>
-                        <a class="btn btn-danger" href="#">Delete</a>
+
+                        <a class="btn btn-warning" href="{{route("student.edit", ["id"=>$student->id])}}">Edit</a>
+                        <button class="btn btn-danger deleteBtn" data-confirm="Realy?|Do you want to continue?" data-confirm-yes="deleteFun({{$student->id}})">Delete</button>
+                    </td>
                     </td>
                 </tr>
                 @endforeach
 
             </table>
+            <form action="{{route("student.destroy")}}" method="POST" id="deleteForm">
+                @csrf
+                <input type="hidden" id="id" name="id" >
+            </form>
+            <script>
+                function deleteFun(ele)
+                {
+                    $("#id").val(ele);
+                    $("#deleteForm").submit();
+                }
+            </script>
         </div>
         <script>
             $(".select2").select2();
@@ -38,11 +51,13 @@
 @section("breadcrumb")
     <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="fas fa-grip-horizontal"></i>Dashboard</a>
     </li>
-    <li class="breadcrumb-item"><a>User</a></li>
+    <li class="breadcrumb-item"><a>Students</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">User</h1>
-@endsection
+    <div style="display: flex;justify-content: space-between;width: 100%;">
+        <h1 class="float-left">Students</h1>
+        <a class="btn btn-primary" href="{{route("student.create")}}">Create</a>
+    </div>@endsection
 @section("title")
     Users List
 @endsection

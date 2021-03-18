@@ -43,8 +43,10 @@
     <li class="breadcrumb-item"><a>Majors</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">Majors</h1>
-@endsection
+    <div style="display: flex;justify-content: space-between;width: 100%;">
+        <h1 class="float-left">Major</h1>
+        <a class="btn btn-primary" href="{{route("major.create")}}">Create</a>
+    </div>@endsection
 @section("title")
     Majors List
 @endsection

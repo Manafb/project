@@ -39,7 +39,7 @@ class UserController extends Controller
     {
         $model=User::findOrFail($id);
         $model->update($request->all());
-        return redirect(route("college.index"))->with("msg","Done!");
+        return redirect(route("user.index"))->with("msg","Done!");
     }
 
     public function destroy(Request $request)

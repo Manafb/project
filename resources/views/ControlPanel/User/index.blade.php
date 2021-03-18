@@ -48,8 +48,10 @@
     <li class="breadcrumb-item"><a>Admins</a></li>
 @endsection
 @section("header")
-    <h1 class="float-left">Admins</h1>
-@endsection
+    <div style="display: flex;justify-content: space-between;width: 100%;">
+        <h1 class="float-left">Admins</h1>
+        <a class="btn btn-primary" href="{{route("user.create")}}">Create</a>
+    </div>@endsection
 @section("title")
     Admins
 @endsection

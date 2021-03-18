@@ -90,6 +90,10 @@ Route::prefix("ControlPanel")->group(function (){
         Route::get('/','Student\StudentController@index')->name('student.index');
         Route::get('/create','Student\StudentController@create')->name('student.create');
         Route::post('/store','Student\StudentController@store')->name('student.store');
+
+        Route::get('/edit/{id}','Student\StudentController@edit')->name('student.edit');
+        Route::post('/edit/{id}','Student\StudentController@update')->name('student.update');
+        Route::post('/destroy','Student\StudentController@destroy')->name('student.destroy');
     });
     Route::prefix("Xvoice")->group(function (){
         Route::get('/', function (){

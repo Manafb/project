@@ -1,7 +1,6 @@
 @extends("layouts.app")
 @section("user","active")
 @section("content")
-
     <div class="row">
         <div class="col-md-6">
             <form action="{{route("user.update",["id"=>$model->id]) }}" method="post">
