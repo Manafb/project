@@ -32,6 +32,7 @@
                 <div class="form-group">
                     <label for="college_id">College:</label>
                     <select  class="form-control select2" id="college_id" name="college_id">
+                        <option>Please Select College</option>
                         @foreach($colleges as $college)
                             <option value="{{$college->id}}">{{$college->name}}</option>
                         @endforeach
@@ -39,12 +40,6 @@
                 </div>
 
                 <div class="form-group select-major">
-                    <label for="major_id">Major:</label>
-                    <select  class="form-control select2" id="major_id" name="major_id">
-                        @foreach($majors as $major)
-                            <option value="{{$major->id}}">{{$major->name}}</option>
-                        @endforeach
-                    </select>
 
 
                 </div>

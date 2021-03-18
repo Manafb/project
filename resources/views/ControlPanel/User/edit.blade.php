@@ -17,7 +17,7 @@
 
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" class="form-control"  value="{{$model->password}}" required>
+                    <input type="text" id="password" name="password" class="form-control">
                 </div>
                 <input type="submit" class="btn btn-primary" value="Save">
             </form>

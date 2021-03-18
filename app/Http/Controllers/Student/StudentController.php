@@ -8,6 +8,7 @@ use App\Student;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class StudentController extends Controller
 {
@@ -21,14 +22,15 @@ class StudentController extends Controller
     public function create() {
         $students = Student::all();
         $college=College::all();
-        $major=Major::all();
-        return view($this->viewNameSpace."create", ['students'=>$students,'colleges'=>$college, 'majors'=>$major]);
+        return view($this->viewNameSpace."create", ['students'=>$students,'colleges'=>$college]);
     }
 
     public function store(Request $request)
     {
-        $user=User::create($request->all());
-        $user->Student()->create($request->all());
+        $data=$request->all();
+        $data["password"]=Hash::make($data['password']);
+        $user=User::create($data);
+        $user->Student()->create($data);
         return redirect(route("student.index"))->with("msg","Done!");
     }
 
@@ -52,6 +54,13 @@ class StudentController extends Controller
     {
         $model=Student::findOrFail($id);
         $model->update($request->all());
+        if(trim($request->input("password"))==""){
+            $data=$request->except("password");
+        }else{
+            $data=$request->all();
+            $data["password"]=Hash::make($data['password']);
+        }
+            $model->User->update($data);
         return redirect(route("student.index"))->with("msg","Done!");
     }
 

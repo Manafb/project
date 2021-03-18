@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -38,7 +39,13 @@ class UserController extends Controller
     public function update($id,Request  $request)
     {
         $model=User::findOrFail($id);
-        $model->update($request->all());
+        if(trim($request->input("password"))==""){
+            $data=$request->except("password");
+        }else{
+            $data=$request->all();
+            $data["password"]=Hash::make($data["password"]);
+        }
+        $model->update($data);
         return redirect(route("user.index"))->with("msg","Done!");
     }
 

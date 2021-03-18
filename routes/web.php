@@ -33,8 +33,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::get('/', function (){
-    return view("test");
+Route::get('/group', function (){
+    return view("Website.Group.index");
 })->name('test');
 
 

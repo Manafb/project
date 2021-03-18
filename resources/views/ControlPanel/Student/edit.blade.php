@@ -7,18 +7,19 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Name: </label>
-                    <input type="text" name="name" class="form-control" value="{{$model->name}}" required>
+                    <input type="text" name="name" class="form-control" value="{{$model->User->name}}" required>
 
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" class="form-control" value="{{$model->email}}" required>
+                    <input type="text" id="email" name="email" class="form-control" value="{{$model->User->email}}" required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" class="form-control" value="{{$model->password}}" required>
+                    <span style="color: darkred">*keep it null if you don't want change</span>
+                    <input type="text" id="password" name="password" class="form-control" value="{{$model->password}}">
                 </div>
 
 

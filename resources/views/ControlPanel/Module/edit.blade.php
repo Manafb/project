@@ -17,7 +17,7 @@
                     <select class="form-control select2" id="major_id" name="major_id">
                         <option value="">Select Major</option>
                         @foreach($majors as $major)
-                            <option value="{{$major->id}} {{$major->id==$model->major_id?"selected":""}}">{{$major->name}}</option>
+                            <option value="{{$major->id}}" {{$major->id==$model->major_id?"selected":""}}>{{$major->name}}</option>
                         @endforeach
 
                     </select>
