@@ -23,6 +23,7 @@ class ModuleController extends Controller
     public function store(Request $request)
     {
         Module::create($request->all());
+        // create private group
         return redirect(route("module.index"));
     }
     public function edit($id)

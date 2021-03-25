@@ -8,19 +8,24 @@
 
 </head>
 <body>
-<div class="nav navbar top-nav">
-<ul>
-    <li>
-        Test1
-    </li>
-    <li>
-        Test2
-    </li>
-</ul>
+
+<nav class="navbar navbar-expand-sm bg-light">
+
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Test 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Test 2</a>
+        </li>
+    </ul>
     <div>
         <img src="{{asset("ControlPanel\assets\img\\example-image.jpg")}}" class="profile-image" />
     </div>
-</div>
+
+</nav>
+
+
 @yield("content")
 
 
