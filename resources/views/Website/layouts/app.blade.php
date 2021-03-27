@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm bg-light" style="display: flex;justify-content: space-between">
 
     <ul class="navbar-nav">
         <li class="nav-item">
