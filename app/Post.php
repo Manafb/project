@@ -23,6 +23,11 @@ class Post extends Model
         return $this->hasMany(Comment::class);
     }
 
+    public function Image()
+    {
+        return $this->morphTo(Image::class,"imagable");
+    }
+
     public function Group()
     {
         return $this->morphTo(Group::class, 'groupable');

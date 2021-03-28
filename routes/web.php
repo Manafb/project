@@ -24,18 +24,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-
-
-
-
-
-
-
-
-
-Route::get('/group', function (){
-    return view("Website.Group.index");
-})->name('test');
+Route::prefix("Group")->group(function (){
+    Route::get('/{id}','Website\Group\GroupController@index')->name('website.group.index');
+    Route::post('/post/{id}','Website\Group\GroupController@createPost')->name('website.group.createPost');
+});
 
 
 Route::prefix("ControlPanel")->group(function (){
