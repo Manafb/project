@@ -1,7 +1,9 @@
 <html>
 <head>
+    <script src="{{asset("ControlPanel/assets/modules/jquery.min.js")}}"></script>
     <link rel="stylesheet" href="{{asset("Website/css/style.css")}}">
     <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/bootstrap/css/bootstrap.min.css")}}">
+    <script src="{{asset("ControlPanel/assets/modules/popper.js")}}"></script>
     @yield("css")
     <title>@yield("title")</title>
     @yield("head")

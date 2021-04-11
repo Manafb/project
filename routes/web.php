@@ -25,8 +25,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::prefix("Group")->group(function (){
+
     Route::get('/{id}','Website\Group\GroupController@index')->name('website.group.index');
+    Route::post('/post/delete/','Website\Group\GroupController@deletePost')->name('website.group.deletePost');
+    Route::post('/post/{group_id}/comment/{post_id}','Website\Group\GroupController@createComment')->name('website.group.createComment');
     Route::post('/post/{id}','Website\Group\GroupController@createPost')->name('website.group.createPost');
+    Route::post('/post/edit/{id}','Website\Group\GroupController@editPost')->name('website.group.editPost');
+    Route::post('/comment/edit/{id}','Website\Group\GroupController@editComment')->name('website.group.editComment');
+    Route::post('/comment/delete','Website\Group\GroupController@deleteComment')->name('website.group.deleteComment');
+
 });
 
 

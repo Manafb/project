@@ -25,12 +25,12 @@ class Post extends Model
 
     public function Image()
     {
-        return $this->morphTo(Image::class,"imagable");
+        return $this->morphOne(Image::class,"imagable");
     }
 
     public function Group()
     {
-        return $this->morphTo(Group::class, 'groupable');
+        return $this->belongsTo(Group::class);
     }
 
 }

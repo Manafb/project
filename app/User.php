@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 
 class User extends Authenticatable
 {
@@ -54,4 +55,46 @@ class User extends Authenticatable
     {
       return User::select("*")->doesntHave("Student")->get();
     }
+
+    public function isAdmin()
+    {
+        return User::select("*")->doesntHave("Student")->where("id",Auth::user()->id)->first()!=null;
+    }
+    public function canModifyComment($comment_id)
+    {
+        $comment_model=Comment::find($comment_id);
+        if(is_null($comment_model)){
+            return false;
+        }
+        return $this->isAdmin() || $this->id==$comment_model->user_id;
+    }
+
+    public function canModifyPost($post_id)
+    {
+        $post_model=Post::find($post_id);
+        if(is_null($post_model)){
+            return false;
+        }
+        return  $this->isAdmin() || $this->id==$post_model->user_id;
+    }
+
+    public function isCommentForUser($comment_id)
+    {
+        $comment_model=Comment::find($comment_id);
+        if(is_null($comment_model)){
+            return false;
+        }
+        return $this->id==$comment_model->user_id;
+    }
+    public function isPostForUser($post_id)
+    {
+        $post_model=Post::find($post_id);
+        if(is_null($post_model)){
+            return false;
+        }
+        return $this->id==$post_model->user_id;
+    }
+
+
+
 }
