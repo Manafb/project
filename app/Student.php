@@ -28,9 +28,9 @@ class Student extends Model
         return $this->belongsToMany(Module::class, "student_modules");
     }
 
-    public function Group_users()
+    public function Group_students()
     {
-        return $this->belongsToMany(Group::class, "group_users");
+        return $this->belongsToMany(Group::class, "group_students");
     }
 
     public function User()

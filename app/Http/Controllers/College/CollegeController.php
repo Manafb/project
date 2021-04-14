@@ -25,8 +25,10 @@ class CollegeController extends Controller
 
     public function store(Request $request)
     {
-        College::create($request->all());
-        //create public group
+        $college=College::create($request->all());
+        $college->Group()->create([
+            "type"=>"public"
+        ]);
         return redirect(route("college.index"))->with("msg","college created successfully");
     }
 

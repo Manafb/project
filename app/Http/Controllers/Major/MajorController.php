@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Major;
 
+use App\College;
 use App\Major;
 use App\User;
 use App\Http\Controllers\Controller;
@@ -18,7 +19,13 @@ class MajorController extends Controller
     }
     public function create() {
         $users = User::allAdmin();
-        return view($this->viewNameSpace."create", ['users'=>$users]);
+        $colleges=College::all();
+        return view($this->viewNameSpace."create",
+            [
+                'users'=>$users,
+                "colleges"=>$colleges
+            ]
+        );
     }
 
     public function store(Request $request)
@@ -30,9 +37,11 @@ class MajorController extends Controller
     {
         $model=Major::findOrFail($id);
         $users=User::allAdmin();
+        $colleges=College::all();
         return view($this->viewNameSpace."edit")
             ->with("model",$model)
-            ->with("users",$users);
+            ->with("users",$users)
+            ->with("colleges",$colleges);
     }
     public function update($id,Request  $request)
     {

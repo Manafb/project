@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Module;
+use App\Group;
 use App\Major;
 use App\Module;
 use App\Http\Controllers\Controller;
@@ -22,8 +23,10 @@ class ModuleController extends Controller
 
     public function store(Request $request)
     {
-        Module::create($request->all());
-        // create private group
+        $module=Module::create($request->all());
+        $module->Group()->create([
+            "type"=>"privet"
+        ]);
         return redirect(route("module.index"));
     }
     public function edit($id)

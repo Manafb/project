@@ -20,12 +20,13 @@ Auth::routes();
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::prefix("Group")->group(function (){
 
+Route::prefix("Group")->middleware("auth")->group(function (){
+
+    Route::get('/publicGroup','Website\Group\GroupController@publicGroup')->name('website.group.publicGroup');
     Route::get('/{id}','Website\Group\GroupController@index')->name('website.group.index');
     Route::post('/post/delete/','Website\Group\GroupController@deletePost')->name('website.group.deletePost');
     Route::post('/post/{group_id}/comment/{post_id}','Website\Group\GroupController@createComment')->name('website.group.createComment');
@@ -37,8 +38,8 @@ Route::prefix("Group")->group(function (){
 });
 
 
-Route::prefix("ControlPanel")->group(function (){
-
+Route::prefix("ControlPanel")->middleware("admin")->group(function (){
+    Route::get('/', 'HomeController@index')->name('home');
     Route::prefix("Ajax")->group(function (){
         Route::post('/ajax_getMajorByCollege','Ajax\AjaxController@getMajorByCollege')->name('ajax.getMajorByCollege');
     });

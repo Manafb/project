@@ -10,6 +10,7 @@ class Major extends Model
         "id",
         "name",
         "head_id",
+        "college_id"
     ];
 
     public function Students()

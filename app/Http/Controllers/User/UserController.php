@@ -14,26 +14,22 @@ class UserController extends Controller
 
     public function index()
     {
-        $users=User::all();
+        $users=User::allAdmin();
         return view($this->viewNameSpace."index", ['users'=>$users]);
     }
     public function create() {
-        $users = User::all();
-        return view($this->viewNameSpace."create", ['users'=>$users]);
+        return view($this->viewNameSpace."create");
     }
 
     public function store(Request $request)
     {
-        User::create($request->all());
         return redirect(route("user.index"));
     }
     public function edit($id)
     {
         $model=User::findOrFail($id);
-        $users=User::allAdmin();
         return view($this->viewNameSpace."edit")
-            ->with("model",$model)
-            ->with("users",$users);
+            ->with("model",$model);
     }
 
     public function update($id,Request  $request)

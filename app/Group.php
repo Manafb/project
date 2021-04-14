@@ -18,9 +18,9 @@ class Group extends Model
         return $this->morphTo();
     }
 
-    public function Group_users()
+    public function Group_students()
     {
-        return $this->hasMany(Group_user::class);
+        return $this->belongsToMany(Group_student::class,"group_students");
     }
 
     public function Posts()

@@ -138,7 +138,7 @@
                 <div class="col-lg-8 post">
                     <!-- Author -->
                     <div class="post-head">
-                        <img src="http://project.test/ControlPanel\assets\img\example-image.jpg"
+                        <img src="http://project.test/ControlPanelAssets\assets\img\example-image.jpg"
                              style="width: 75px;height: 75px;border-radius: 50%;">
                         <div class="post-user-name">
                             <a href="#">{{$post->User->name}}</a>

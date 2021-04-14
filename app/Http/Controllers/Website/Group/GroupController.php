@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Website\Group;
 
+use App\College;
 use App\Comment;
 use App\Group;
 use App\Http\Controllers\Controller;
@@ -16,7 +17,9 @@ class GroupController extends Controller
     public function index($id)
     {
         $model=Group::findOrFail($id);
+        dd(Auth::user()->ishasAccessForGroup($id));
         $posts=$model->Posts()->with("image")->orderBy("created_at","desc")->get();
+
         return view("Website.Group.index",[
             "model"=>$model,
             "posts"=>$posts
@@ -93,5 +96,10 @@ class GroupController extends Controller
 
         return redirect(route("website.group.index",["id"=>$post_model->Group->id]));
 
+    }
+
+    public function publicGroup()
+    {
+        return redirect(route("website.group.index",["id"=>Auth::user()->Student->College->Group->id]));
     }
 }

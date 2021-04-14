@@ -95,6 +95,13 @@ class User extends Authenticatable
         return $this->id==$post_model->user_id;
     }
 
+    public function ishasAccessForGroup($group_id)
+    {
+        $model=Group::findOrFail($group_id);
+        dd($model->Group_students);
+        return $model->Group_users()->where("student_id",$this->Student->id)->first()!=null;
+    }
+
 
 
 }

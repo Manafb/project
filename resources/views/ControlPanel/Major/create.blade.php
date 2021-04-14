@@ -10,7 +10,15 @@
                     <label for="name">Name: </label>
                     <input type="text" id="name" name="name" class="form-control">
                 </div>
-
+                <div class="form-group">
+                    <label for="head_id">Colleges: </label>
+                    <select class="form-control select2" name="college_id">
+                        <option value="">Select College</option>
+                        @foreach($colleges as $college)
+                            <option value="{{$college->id}}">{{$college->name}}</option>
+                        @endforeach
+                    </select>
+                </div>
 
                 <div class="form-group">
                     <label for="head_id">Head Of Department: </label>

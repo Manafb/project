@@ -13,7 +13,7 @@ class CreateGroupUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('group_users', function (Blueprint $table) {
+        Schema::create('group_students', function (Blueprint $table) {
             $table->bigInteger('group_id')->unsigned();
             $table->bigInteger('student_id')->unsigned();
 

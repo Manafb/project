@@ -20,6 +20,7 @@ class Module extends Model
     public function Group()
     {
         //return $this->belongsTo(Group::class);
+        return $this->morphOne(Group::class,"groupable");
     }
 
     public function Major()

@@ -1,9 +1,9 @@
 <html>
 <head>
-    <script src="{{asset("ControlPanel/assets/modules/jquery.min.js")}}"></script>
+    <script src="{{asset("ControlPanelAssets/assets/modules/jquery.min.js")}}"></script>
     <link rel="stylesheet" href="{{asset("Website/css/style.css")}}">
-    <link rel="stylesheet" href="{{asset("ControlPanel/assets/modules/bootstrap/css/bootstrap.min.css")}}">
-    <script src="{{asset("ControlPanel/assets/modules/popper.js")}}"></script>
+    <link rel="stylesheet" href="{{asset("ControlPanelAssets/assets/modules/bootstrap/css/bootstrap.min.css")}}">
+    <script src="{{asset("ControlPanelAssets/assets/modules/popper.js")}}"></script>
     @yield("css")
     <title>@yield("title")</title>
     @yield("head")
@@ -22,7 +22,7 @@
         </li>
     </ul>
     <div>
-        <img src="{{asset("ControlPanel\assets\img\\example-image.jpg")}}" class="profile-image" />
+        <img src="{{asset("ControlPanelAssets\assets\img\\example-image.jpg")}}" class="profile-image" />
     </div>
 
 </nav>
@@ -32,7 +32,7 @@
 
 
 @yield("footer")
-<script src="{{asset("ControlPanel/assets/modules/bootstrap/js/bootstrap.min.js")}}"></script>
+<script src="{{asset("ControlPanelAssets/assets/modules/bootstrap/js/bootstrap.min.js")}}"></script>
 @yield("js")
 </body>
 

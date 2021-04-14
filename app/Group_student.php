@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Group_user extends Model
+class Group_student extends Model
 {
     protected $fillable=[
         "id",
@@ -19,7 +19,7 @@ class Group_user extends Model
 
     public function Group()
     {
-        return $this->morphTo(Group::class, 'Groupable');
+        return $this->belongsTo(Group::class);
     }
 
 
