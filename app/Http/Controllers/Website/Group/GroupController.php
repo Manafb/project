@@ -6,9 +6,11 @@ use App\College;
 use App\Comment;
 use App\Group;
 use App\Http\Controllers\Controller;
+use App\Module;
 use App\Post;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
@@ -17,7 +19,9 @@ class GroupController extends Controller
     public function index($id)
     {
         $model=Group::findOrFail($id);
-        dd(Auth::user()->ishasAccessForGroup($id));
+        if(!Auth::user()->ishasAccessForGroup($id)){
+            return redirect(route("website.group.publicGroup"));
+        }
         $posts=$model->Posts()->with("image")->orderBy("created_at","desc")->get();
 
         return view("Website.Group.index",[
@@ -101,5 +105,29 @@ class GroupController extends Controller
     public function publicGroup()
     {
         return redirect(route("website.group.index",["id"=>Auth::user()->Student->College->Group->id]));
+    }
+
+    public function joinGroup()
+    {
+        //
+        $group_join=Arr::pluck(Auth::user()->Student->Groups->toArray(),"id");
+        $modules=Auth::user()->Student->College->Moudels()->with(["Group"=>function($q) use ($group_join){
+            $q->whereNotIn("id",$group_join);
+        }])->get();
+        foreach ($modules as $key=> $module){
+            if(is_null($module->Group)){
+                $modules->forget($key);
+            }
+        }
+        return view("Website.JoinGroup.index",["modules"=>$modules]);
+    }
+
+    public function actionJoinGroup(Request $request)
+    {
+        $user=Auth::user();
+        $module_model=Module::find($request->input("module_id"));
+        $user->Student->Groups()->attach($module_model->Group->id);
+        return redirect()->back();
+
     }
 }

@@ -28,7 +28,7 @@ class Student extends Model
         return $this->belongsToMany(Module::class, "student_modules");
     }
 
-    public function Group_students()
+    public function Groups()
     {
         return $this->belongsToMany(Group::class, "group_students");
     }

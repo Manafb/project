@@ -26,6 +26,11 @@ class College extends Model
         return $this->hasMany(Major::class);
     }
 
+    public function Moudels()
+    {
+        return $this->hasManyThrough(Module::class,Major::class);
+    }
+
     public function Group()
     {
         return $this->morphOne(Group::class,"groupable");

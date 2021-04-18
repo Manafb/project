@@ -27,6 +27,8 @@ Auth::routes();
 Route::prefix("Group")->middleware("auth")->group(function (){
 
     Route::get('/publicGroup','Website\Group\GroupController@publicGroup')->name('website.group.publicGroup');
+    Route::get('/joinGroup','Website\Group\GroupController@joinGroup')->name('website.group.joinGroup');
+    Route::post('/joinGroup','Website\Group\GroupController@actionJoinGroup')->name('website.group.joinGroup');
     Route::get('/{id}','Website\Group\GroupController@index')->name('website.group.index');
     Route::post('/post/delete/','Website\Group\GroupController@deletePost')->name('website.group.deletePost');
     Route::post('/post/{group_id}/comment/{post_id}','Website\Group\GroupController@createComment')->name('website.group.createComment');
@@ -36,10 +38,19 @@ Route::prefix("Group")->middleware("auth")->group(function (){
     Route::post('/comment/delete','Website\Group\GroupController@deleteComment')->name('website.group.deleteComment');
 
 });
+Route::prefix("xVoice")->middleware("auth")->group(function (){
+    Route::get('/new','Website\XVoice\XVoiceController@newXVoice')->name('website.xVoice.newXVoice');
+    Route::post('/sendVoice','Website\XVoice\XVoiceController@sendVoice')->name('website.xVoice.sendVoice');
+});
 
 
 Route::prefix("ControlPanel")->middleware("admin")->group(function (){
     Route::get('/', 'HomeController@index')->name('home');
+    Route::prefix("Xvoice")->group(function (){
+        Route::get('/', 'Xvoice\XvoiceCPController@index')->name('xVoice.index');
+        Route::get('/read/{id}', 'Xvoice\XvoiceCPController@read')->name('xVoice.read');
+        Route::post('/delete', 'Xvoice\XvoiceCPController@delete')->name('xVoice.delete');
+    });
     Route::prefix("Ajax")->group(function (){
         Route::post('/ajax_getMajorByCollege','Ajax\AjaxController@getMajorByCollege')->name('ajax.getMajorByCollege');
     });
@@ -96,9 +107,9 @@ Route::prefix("ControlPanel")->middleware("admin")->group(function (){
         Route::post('/destroy','Student\StudentController@destroy')->name('student.destroy');
     });
     Route::prefix("Xvoice")->group(function (){
-        Route::get('/', function (){
-            return view("ControlPanel.Xvoice.index");
-        })->name('xvoice.index');
+//        Route::get('/', function (){
+//            return view("ControlPanel.Xvoice.index");
+//        })->name('xvoice.index');
         Route::get('/read', function (){
             return view("ControlPanel.Xvoice.read");
         })->name('xvoice.read');

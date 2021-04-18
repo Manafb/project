@@ -17,7 +17,7 @@ class CreateXvoicesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('content');
-            $table->dateTime('read_at');
+            $table->dateTime('read_at')->nullable();
             $table->bigInteger('received_id')->unsigned();
 
             $table->foreign('received_id')->references('id')->on('users')->onDelete('cascade');

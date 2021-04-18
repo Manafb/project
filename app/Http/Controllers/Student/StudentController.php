@@ -31,6 +31,9 @@ class StudentController extends Controller
         $data["password"]=Hash::make($data['password']);
         $user=User::create($data);
         $user->Student()->create($data);
+        $college_id=$request->input("college_id");
+        $college_model=College::find($college_id);
+        $user->Student->Groups()->attach($college_model->Group->id);
         return redirect(route("student.index"))->with("msg","Done!");
     }
 
