@@ -11,7 +11,9 @@ class XvoiceController extends Controller
 {
     public function newXVoice()
     {
-        return view("Website.Xvoice.new");
+        $user=Auth::user();
+        return view("Website.Xvoice.new")
+            ->with("RGroup",$user->getRelatedGroups());
     }
 
     public function sendVoice(Request $request)

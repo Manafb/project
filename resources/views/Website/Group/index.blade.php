@@ -138,8 +138,13 @@
                 <div class="col-lg-8 post">
                     <!-- Author -->
                     <div class="post-head">
-                        <img src="http://project.test/ControlPanelAssets\assets\img\example-image.jpg"
+                        @if(!is_null($post->User->Image))
+                        <img src="{{asset("images/".$post->User->Image->url)}}"
                              style="width: 75px;height: 75px;border-radius: 50%;">
+                        @else
+                            <img src="http://project.test/ControlPanelAssets\\assets\\img\\example-image.jpg"
+                                 style="width: 75px;height: 75px;border-radius: 50%;">
+                        @endif
                         <div class="post-user-name">
                             <a href="#">{{$post->User->name}}</a>
                             <p>{{$post->created_at->diffForHumans()}}</p>

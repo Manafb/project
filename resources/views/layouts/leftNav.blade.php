@@ -13,6 +13,7 @@
             <li class="@hassection("module")  active @endif"><a class="nav-link" href="{{route("module.index")}}"><i class="fas fa-book"></i> <span>Module</span></a>
             <li class="@hassection("user")  active @endif"><a class="nav-link" href="{{route("user.index")}}"><i class="fas fa-users"></i> <span>Admins</span></a>
             <li class="@hassection("student")  active @endif"><a class="nav-link" href="{{route("student.index")}}"><i class="fas fa-graduation-cap"></i> <span>Student</span></a>
+            <li class="@hassection("xvoice")  active @endif"><a class="nav-link" href="{{route("xVoice.index")}}"><i class="fas fa-microphone"></i> <span>Xvoice</span></a>
             </li>
         </ul>
 

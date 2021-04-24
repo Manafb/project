@@ -15,11 +15,23 @@
 
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="#">Test 1</a>
+            <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+               Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         </li>
+        @foreach($RGroup as $group)
+            <li class="nav-item">
+                <a class="nav-link" href="{{route("website.group.index",["id"=>$group->id])}}">{{$group->Groupable->name}}</a>
+            </li>
+        @endforeach
         <li class="nav-item">
-            <a class="nav-link" href="#">Test 2</a>
+            <a class="nav-link btn btn-info" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>
         </li>
+
     </ul>
     <div>
         <img src="{{asset("ControlPanelAssets\assets\img\\example-image.jpg")}}" class="profile-image" />

@@ -97,8 +97,25 @@ class User extends Authenticatable
 
     public function ishasAccessForGroup($group_id)
     {
+        $user=Auth::user();
+        if($user->isAdmin()){
+            return true;
+        }
         $model=Group::findOrFail($group_id);
-        return $model->Students()->where("user_id",Auth::user()->id)->first()!=null;
+        return $model->Students()->where("user_id",$user->id)->first()!=null;
+    }
+
+    public function getRelatedGroups()
+    {
+        if($this->isAdmin()){
+            return [];
+        }
+        return $this->Student->Groups;
+    }
+
+    public function Image()
+    {
+        return $this->morphOne(Image::class,"imagable");
     }
 
 

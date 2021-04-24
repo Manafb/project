@@ -23,13 +23,14 @@ class GroupController extends Controller
             return redirect(route("website.group.publicGroup"));
         }
         $posts=$model->Posts()->with("image")->orderBy("created_at","desc")->get();
-
+        $user=Auth::user();
         return view("Website.Group.index",[
             "model"=>$model,
-            "posts"=>$posts
+            "posts"=>$posts,
+            "RGroup"=>$user->getRelatedGroups()
         ]);
-    }
 
+    }
     public function createPost($id,Request  $request)
     {
         $post=Post::create([
@@ -119,7 +120,13 @@ class GroupController extends Controller
                 $modules->forget($key);
             }
         }
-        return view("Website.JoinGroup.index",["modules"=>$modules]);
+        $user=Auth::user();
+        return view("Website.JoinGroup.index",
+            [
+                "modules"=>$modules,
+                "RGroup"=>$user->getRelatedGroups()
+            ]
+        );
     }
 
     public function actionJoinGroup(Request $request)

@@ -15,8 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
+Auth::routes();
+Route::get("/register",function (){
+    return redirect(route("login"));
+});
 
 
 
@@ -26,9 +29,9 @@ Auth::routes();
 
 Route::prefix("Group")->middleware("auth")->group(function (){
 
-    Route::get('/publicGroup','Website\Group\GroupController@publicGroup')->name('website.group.publicGroup');
-    Route::get('/joinGroup','Website\Group\GroupController@joinGroup')->name('website.group.joinGroup');
-    Route::post('/joinGroup','Website\Group\GroupController@actionJoinGroup')->name('website.group.joinGroup');
+    Route::get('/publicGroup','Website\Group\GroupController@publicGroup')->middleware("student")->name('website.group.publicGroup');
+    Route::get('/joinGroup','Website\Group\GroupController@joinGroup')->middleware("student")->name('website.group.joinGroup');
+    Route::post('/joinGroup','Website\Group\GroupController@actionJoinGroup')->middleware("student")->name('website.group.joinGroup');
     Route::get('/{id}','Website\Group\GroupController@index')->name('website.group.index');
     Route::post('/post/delete/','Website\Group\GroupController@deletePost')->name('website.group.deletePost');
     Route::post('/post/{group_id}/comment/{post_id}','Website\Group\GroupController@createComment')->name('website.group.createComment');

@@ -7,10 +7,9 @@
     </form>
     <ul class="navbar-nav navbar-right">
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                <img  src="{{asset("images/".Auth::user()->Image->url??"")}}" style="width: 50px;height: 50px;" class="rounded-circle mr-1">
                 <div class="d-sm-none d-lg-inline-block">{{Auth::user()->name}}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-title">Logged in 5 min ago</div>
                 <a href="{{route("user.edit",["id"=>Auth::user()->id])}}" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
