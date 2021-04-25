@@ -57,6 +57,9 @@ Route::prefix("ControlPanel")->middleware("admin")->group(function (){
     Route::prefix("Ajax")->group(function (){
         Route::post('/ajax_getMajorByCollege','Ajax\AjaxController@getMajorByCollege')->name('ajax.getMajorByCollege');
     });
+    Route::prefix("Group")->group(function (){
+        Route::get("/","Group\GroupCPController@index")->name("group.index");
+    });
     Route::prefix("College")->group(function (){
         Route::get('/','College\CollegeController@index')->name('college.index');
         Route::get('/create','College\CollegeController@create')->name('college.create');

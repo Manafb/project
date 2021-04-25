@@ -140,10 +140,10 @@
                     <div class="post-head">
                         @if(!is_null($post->User->Image))
                         <img src="{{asset("images/".$post->User->Image->url)}}"
-                             style="width: 75px;height: 75px;border-radius: 50%;">
+                             style="width: 60px;height: 60px;border-radius: 50%; margin-right: 7px;">
                         @else
                             <img src="http://project.test/ControlPanelAssets\\assets\\img\\example-image.jpg"
-                                 style="width: 75px;height: 75px;border-radius: 50%;">
+                                 style="width: 60px;height: 60px;border-radius: 50%; margin-right: 7px;">
                         @endif
                         <div class="post-user-name">
                             <a href="#">{{$post->User->name}}</a>
@@ -189,7 +189,13 @@
                     @endif
                     @foreach($post->Comments as $key=>$comment)
                         <div class="media mb-4 comment">
-                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                            @if(!is_null($comment->User->Image))
+                                <img src="{{asset("images/".$comment->User->Image->url)}}"
+                                     style="width: 50px;height: 50px;border-radius: 50%;margin-right: 15px;">
+                            @else
+                                <img src="http://project.test/ControlPanelAssets\\assets\\img\\example-image.jpg"
+                                     style="width: 50px;height: 50px;border-radius: 50%;margin-right: 15px;">
+                            @endif
                             <div class="media-body">
                                 <h5 class="mt-0"><a href="#">{{$comment->User->name}}</a></h5>
 

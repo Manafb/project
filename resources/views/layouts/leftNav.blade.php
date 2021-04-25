@@ -14,6 +14,7 @@
             <li class="@hassection("user")  active @endif"><a class="nav-link" href="{{route("user.index")}}"><i class="fas fa-users"></i> <span>Admins</span></a>
             <li class="@hassection("student")  active @endif"><a class="nav-link" href="{{route("student.index")}}"><i class="fas fa-graduation-cap"></i> <span>Student</span></a>
             <li class="@hassection("xvoice")  active @endif"><a class="nav-link" href="{{route("xVoice.index")}}"><i class="fas fa-microphone"></i> <span>Xvoice</span></a>
+            <li class="@hassection("group")  active @endif"><a class="nav-link" href="{{route("group.index")}}"><i class="fas fa-users"></i> <span>Group</span></a>
             </li>
         </ul>
 

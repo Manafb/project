@@ -28,13 +28,19 @@
                 <a class="nav-link" href="{{route("website.group.index",["id"=>$group->id])}}">{{$group->Groupable->name}}</a>
             </li>
         @endforeach
-        <li class="nav-item">
-            <a class="nav-link btn btn-info" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>
-        </li>
-
+{{--        <li class="nav-item">--}}
+{{--            <a class="nav-link btn btn-info" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>--}}
+{{--        </li>--}}
     </ul>
     <div>
-        <img src="{{asset("ControlPanelAssets\assets\img\\example-image.jpg")}}" class="profile-image" />
+        <a class="nav-link btn btn-info" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>
+{{--        @if(!is_null(Auth::user()->Image))--}}
+{{--            <img src="{{asset("images/".Auth::user()->Image->url)}}"--}}
+{{--                 class="profile-image">--}}
+{{--        @else--}}
+{{--            <img src="http://project.test/ControlPanelAssets\\assets\\img\\example-image.jpg"--}}
+{{--                 class="profile-image">--}}
+{{--        @endif--}}
     </div>
 
 </nav>

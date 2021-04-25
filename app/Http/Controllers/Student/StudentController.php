@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class StudentController extends Controller
 {
@@ -30,6 +31,13 @@ class StudentController extends Controller
         $data=$request->all();
         $data["password"]=Hash::make($data['password']);
         $user=User::create($data);
+        if($request->hasFile("image")){
+            $path=Storage::disk("images")->putFile('profile/images', $request->file('image'));
+            $user->Image()->create([
+                "name"=>$request->file("image")->getClientOriginalName(),
+                "url"=>$path,
+            ]);
+        }
         $user->Student()->create($data);
         $college_id=$request->input("college_id");
         $college_model=College::find($college_id);
@@ -64,6 +72,20 @@ class StudentController extends Controller
             $data["password"]=Hash::make($data['password']);
         }
             $model->User->update($data);
+        $user=$model->User;
+        if($request->hasFile("image")){
+            try {
+                Storage::disk("images")->delete($user->Image->url);
+            }catch (\Exception $exception){
+
+            }
+            $path=Storage::disk("images")->putFile('profile/images', $request->file('image'));
+            $user->Image()->delete();
+            $user->Image()->create([
+                "name"=>$request->file("image")->getClientOriginalName(),
+                "url"=>$path,
+            ]);
+        }
         return redirect(route("student.index"))->with("msg","Done!");
     }
 

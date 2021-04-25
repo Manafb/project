@@ -1,34 +1,35 @@
 @extends("layouts.app")
 @section("student","active")
 @section("content")
+    <form action="{{route("student.store")}}" method="post" enctype="multipart/form-data">
+        @csrf
     <div class="row">
         <div class="col-md-6">
-            <form action="{{route("student.store")}}" method="post">
-                @csrf
                 <div class="form-group">
                     <label for="name">Name: </label>
                     <input type="text" name="name" class="form-control" >
 
                 </div>
-
+        </div>
+        <div class="col-md-6">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" class="form-control">
                 </div>
-
+        </div>
+        <div class="col-md-6">
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="text" id="password" name="password" class="form-control">
                 </div>
-
-
+        </div>
+        <div class="col-md-6">
                 <div class="form-group">
                     <label for="uid">Student ID:</label>
                     <input type="text" id="uid" name="uid" class="form-control">
                 </div>
-
-
-
+        </div>
+        <div class="col-md-6">
                 <div class="form-group">
                     <label for="college_id">College:</label>
                     <select  class="form-control select2" id="college_id" name="college_id">
@@ -38,14 +39,21 @@
                         @endforeach
                     </select>
                 </div>
-
-                <div class="form-group select-major">
-
-
-                </div>
-                <input type="submit" class="btn btn-primary" value="Save">
-            </form>
         </div>
+        <div class="col-md-6">
+                <div class="form-group select-major">
+                </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="image">Profile Image: </label>
+                <label for="upload" class="btn btn-primary mt-3" style="color: white">Choose file</label>
+                <input type="file" id="upload" name="image" hidden/>
+            </div>
+        </div>
+    </div>
+        <input type="submit" class="btn btn-primary" value="Save">
+    </form>
         <script>
             $("#college_id").on("change",function (){
                 var self=$(this);
