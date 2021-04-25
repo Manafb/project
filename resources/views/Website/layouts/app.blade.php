@@ -33,7 +33,10 @@
 {{--        </li>--}}
     </ul>
     <div>
-        <a class="nav-link btn btn-info" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>
+        @if(!Auth::user()->isAdmin())
+        <a class="nav-link btn btn-info" style="float: right" href="{{route("website.xVoice.newXVoice")}}">XVoice</a>
+        <a class="nav-link btn btn-info" style="float: left; margin-right: 5px;" href="{{route("website.group.joinGroup")}}">Join Group</a>
+        @endif
 {{--        @if(!is_null(Auth::user()->Image))--}}
 {{--            <img src="{{asset("images/".Auth::user()->Image->url)}}"--}}
 {{--                 class="profile-image">--}}
